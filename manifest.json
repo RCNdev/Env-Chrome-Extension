@@ -1,0 +1,6 @@
+{
+    "name": "Env",
+    "description": "Never mix up different versions of your site",
+    "version": "0.1",
+    "manifest_version": 3
+}
