@@ -1,6 +1,25 @@
 {
     "name": "Env",
-    "description": "Never mix up different versions of your site",
+    "description": "Never mix up different versions of your sites",
+    "action": {},
+    "manifest_version": 3,
     "version": "0.1",
-    "manifest_version": 3
+    "content_scripts": [
+        {
+            "matches": ["https://local.rcn.org.uk/*"],
+            "css": ["local.css"]
+        },
+        {
+            "matches": ["https://qa.rcn.org.uk/*"],
+            "css": ["qa.css"]
+        },
+        {
+            "matches": ["https://uatorange.rcn.org.uk/*"],
+            "css": ["orange.css"]
+        },
+        {
+            "matches": ["https://uatorange.rcn.org.uk/*"],
+            "css": ["orange.css"]
+        }
+    ]
 }
