@@ -7,19 +7,23 @@
     "content_scripts": [
         {
             "matches": ["https://local.rcn.org.uk/*"],
-            "css": ["local.css"]
+            "css": ["env.css"],
+            "js": ["local.js"]
         },
         {
             "matches": ["https://qa.rcn.org.uk/*"],
-            "css": ["qa.css"]
+            "css": ["env.css"],
+            "js": ["qa.js"]
+        },
+        {
+            "matches": ["https://uatlime.rcn.org.uk/*"],
+            "css": ["env.css"],
+            "js": ["lime.js"]
         },
         {
             "matches": ["https://uatorange.rcn.org.uk/*"],
-            "css": ["orange.css"]
-        },
-        {
-            "matches": ["https://uatorange.rcn.org.uk/*"],
-            "css": ["orange.css"]
+            "css": ["env.css"],
+            "js": ["orange.js"]
         }
     ]
 }
