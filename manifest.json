@@ -6,7 +6,7 @@
     "version": "0.1",
     "content_scripts": [
         {
-            "matches": ["https://local.rcn.org.uk/*"],
+            "matches": ["https://local.rcn.org.uk/*", "*://localhost:*/*"],
             "css": ["env.css"],
             "js": ["local.js"]
         },
@@ -16,12 +16,18 @@
             "js": ["qa.js"]
         },
         {
-            "matches": ["https://uatlime.rcn.org.uk/*"],
+            "matches": [
+                "https://uatlime.rcn.org.uk/*",
+                "https://uatcmlime.rcn.org.uk/*"
+            ],
             "css": ["env.css"],
             "js": ["lime.js"]
         },
         {
-            "matches": ["https://uatorange.rcn.org.uk/*"],
+            "matches": [
+                "https://uatorange.rcn.org.uk/*",
+                "https://uatcmorange.rcn.org.uk/*"
+            ],
             "css": ["env.css"],
             "js": ["orange.js"]
         }
