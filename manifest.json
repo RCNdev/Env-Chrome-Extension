@@ -1,35 +1,34 @@
 {
-    "name": "Env",
-    "description": "Never mix up different versions of your sites",
-    "action": {},
-    "manifest_version": 3,
-    "version": "0.1",
-    "content_scripts": [
-        {
-            "matches": ["https://local.rcn.org.uk/*", "*://localhost:*/*"],
-            "css": ["env.css"],
-            "js": ["local.js"]
-        },
-        {
-            "matches": ["https://qa.rcn.org.uk/*"],
-            "css": ["env.css"],
-            "js": ["qa.js"]
-        },
-        {
-            "matches": [
-                "https://uatlime.rcn.org.uk/*",
-                "https://uatcmlime.rcn.org.uk/*"
-            ],
-            "css": ["env.css"],
-            "js": ["lime.js"]
-        },
-        {
-            "matches": [
-                "https://uatorange.rcn.org.uk/*",
-                "https://uatcmorange.rcn.org.uk/*"
-            ],
-            "css": ["env.css"],
-            "js": ["orange.js"]
-        }
-    ]
+	"name": "Env",
+	"description": "Never mix up different versions of your sites",
+	"action": {},
+	"manifest_version": 3,
+	"version": "0.1",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://local.rcn.org.uk/*",
+				"https://localcm.rcn.org.uk/*",
+				"*://localhost:*/*"
+			],
+			"css": ["env.css"],
+			"js": ["local.js"]
+		},
+		{
+			"matches": [
+				"https://uatcyan.rcn.org.uk/*",
+				"https://uatcmcyan.rcn.org.uk/*"
+			],
+			"css": ["env.css"],
+			"js": ["cyan.js"]
+		},
+		{
+			"matches": [
+				"https://uatamber.rcn.org.uk/*",
+				"https://uatcmamber.rcn.org.uk/*"
+			],
+			"css": ["env.css"],
+			"js": ["amber.js"]
+		}
+	]
 }
